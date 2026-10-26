@@ -17,13 +17,14 @@ Dokumentasi komprehensif perancangan dan implementasi sistem pemantauan server (
 ## 🛠️ 2. Tahapan Implementasi Lengkap
 
 ### Langkah A: Pembuatan Custom Bash Script untuk Resource Monitoring
-    Sebelum menggunakan ekosistem enterprise, sistem dibangun menggunakan skrip Bash untuk memantau penggunaan sumber daya secara langsung melalui terminal.
+Sebelum menggunakan ekosistem enterprise, sistem dibangun menggunakan skrip Bash untuk memantau penggunaan sumber daya secara langsung melalui terminal
+
 1. Buat file skrip:
-   ```bash
-   nano monitor.sh
+   `nano monitor.sh`
    
 2. Masukkan logika pengecekan resource:
-   #!/bin/bash
+   
+`  #!/bin/bash
    echo "=== SYSTEM RESOURCE MONITOR ==="
    echo "Date: $(date)"
    echo "---------------------------------"
@@ -32,7 +33,7 @@ Dokumentasi komprehensif perancangan dan implementasi sistem pemantauan server (
    echo ""
    echo "[Memory Usage]:"
    free -m | awk 'NR==2 {printf "Used: %.2f%% (%sMB / %sMB)\n", $3*100/$2, $3, $2}'
-   echo "================================-"
+   echo "================================-"`
    
 4. Berikan izin eksekusi dan jalankan:
    chmod +x monitor.sh
