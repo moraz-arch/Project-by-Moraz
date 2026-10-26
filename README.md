@@ -35,7 +35,6 @@ Sebelum menggunakan ekosistem enterprise, sistem dibangun menggunakan skrip Bash
    echo "[Memory Usage]:"
    free -m | awk 'NR==2 {printf "Used: %.2f%% (%sMB / %sMB)\n", $3*100/$2, $3, $2}'
    echo "================================-"`
-   
 4. Berikan izin eksekusi dan jalankan:
    chmod +x monitor.sh
    ./monitor.sh
