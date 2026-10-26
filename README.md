@@ -36,8 +36,8 @@ Sebelum menggunakan ekosistem enterprise, sistem dibangun menggunakan skrip Bash
    free -m | awk 'NR==2 {printf "Used: %.2f%% (%sMB / %sMB)\n", $3*100/$2, $3, $2}'
    echo "================================-"`
 4. Berikan izin eksekusi dan jalankan:
-   chmod +x monitor.sh
-   ./monitor.sh
+  ` chmod +x monitor.sh` dan 
+    `./monitor.sh`
 
 ### Langkah B: Instalasi Node Exporter & Prometheus
     Untuk skala produksi, metrik server dieksport menggunakan Prometheus dan Node Exporter
