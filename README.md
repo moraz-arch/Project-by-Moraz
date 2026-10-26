@@ -24,7 +24,8 @@ Sebelum menggunakan ekosistem enterprise, sistem dibangun menggunakan skrip Bash
    
 2. Masukkan logika pengecekan resource:
    
-`  #!/bin/bash
+   ```
+   #!/bin/bash
    echo "=== SYSTEM RESOURCE MONITOR ==="
    echo "Date: $(date)"
    echo "---------------------------------"
